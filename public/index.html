@@ -1,13 +1,80 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>English Vocabulary Trainer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
-    test
+<div class="container py-5">
+    <div
+      class="d-flex flex-column align-items-center w-100 text-center mx-auto"
+    >
+        <h2 class="mb-5">English Vocabulary Trainer</h2>
+
+        <p class="lead mb-1">
+            Form a valid English word using the given letters
+        </p>
+
+
+        <div id="continueContainer" class="continueContainer hidden">
+            <h4 class="continueTitle">
+                Would you like to continue the previous game?
+            </h4>
+            <button id="continueButtonAgree" class="button">Yes</button>
+            <button id="continueButtonDecline" class="button">No</button>
+        </div>
+
+        <div>
+            <div id="gameOver" class="hidden">
+                <ul class="finalResults">
+                    <li class="result">
+                        The number of words without errors:
+                        <span id="numberOfWordsWithNoErrors">0</span>
+                    </li>
+                    <li class="result">
+                        Number of errors: <span id="totalErrors">0</span>
+                    </li>
+                    <li class="result">
+                        The words with the highest number of errors:
+                        <ul id="wordsWithMostErrors" class="wordsWithMostErrors"></ul>
+                    </li>
+                </ul>
+                <div>
+                    <button id="playAgainButton" class="button playAgainButton">Play again</button>
+                </div>
+            </div>
+
+            <div id="game" class="game">
+                <div class="stepContainer">
+                    Question <span id="current_step">1</span> of
+                    <span id="total_steps">10</span>
+                </div>
+                <div
+                  id="answer"
+                  class="bg-light mx-1 mb-3"
+                  style="height: 55px; border-radius: 6px"
+                >
+                    <ul
+                      id="letters-container-completed"
+                      class="letter-container letter-container-complete"
+                    ></ul>
+                </div>
+
+                <div id="letters" class="mx-1 mb-3">
+                    <ul
+                      id="letters-container-mixed"
+                      class="letter-container letter-container-mixed"
+                    ></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

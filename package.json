@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +25,7 @@
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.21.5",
+    "@types/webpack-env": "^1.18.1",
     "prettier": "^2.8.8",
     "terser-webpack-plugin": "^5.3.9",
     "typescript": "^5.1.3"

@@ -1,0 +1,24 @@
+:root {
+    --white: #FFF;
+    --red: #FF6347FF;
+    --green: #91D1A0;
+    --blue: #81CED9FF;
+    --blue-light: #87CEFA;
+    --silver: #ACACB2;
+    --silver-light: #D6D6DC;
+    --grey: #808080FF;
+
+    --gap-sm: 3px;
+    --gap-md: 5px;
+    --gap-l: 10px;
+    --gap-xl: 15px;
+    --gap-xxl: 20px;
+    --gap-3xl: 25px;
+    --gap-4xl: 30px;
+
+    --box-width-md: 55px;
+    --box-heigh-md: 55px;
+
+    --border-radius-md: 5px;
+    --border-radius-l: 10px;
+}
