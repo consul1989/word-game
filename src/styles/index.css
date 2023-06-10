@@ -1,5 +1,113 @@
+@import "variables.css";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Letter container */
+
+.letter-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-md);
+    list-style-type: none;
+}
+
+.letter-container-complete {
+    justify-content: start;
+}
+
+.letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--box-width-md);
+    height: var(--box-heigh-md);
+    border: 1px solid var(--silver);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+}
+
+.letter-container-complete .letter {
+    background-color: var(--green);
+}
+
+.letter-container-mixed .letter {
+    background-color: var(--blue);
+}
+
+.letter:hover {
+    background-color: var(--blue-light);
+}
+
+.letter.letter-error {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.stepContainer {
+    margin-top: var(--gap-xl);
+    margin-bottom: var(--gap-xl);
+}
+
+/* Final Results */
+
+.finalResults {
+    list-style-type: none;
+    border: 1px solid var(--grey);
+    padding: var(--gap-xxl);
+}
+
+.result {
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    border: 1px solid var(--silver);
+    border-radius: var(--border-radius-l);
+    padding: var(--gap-xl) var(--gap-3xl);
+    cursor: pointer;
+}
+
+.wordsWithMostErrors {
+    display: flex;
+    gap: var(--gap-md);
+    margin-top: var(--gap-md);
+    padding: 0 var(--gap-xl);
+    list-style-type: none;
+}
+
+.incorrectWord {
+    padding: var(--gap-sm) var(--gap-l);
+    border: 1px solid var(--silver);
+    border-radius: var(--gap-md);
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.playAgainButton {
+    background-color: var(--blue);
+}
+
+.playAgainButton:hover {
+    background-color: var(--blue-light);
+}
+
+/* Continue Container */
+
+.continueContainer {
+    margin-top: var(--gap-4xl);
+    padding: var(--gap-3xl);
+    border: 1px solid var(--grey);
+    border-radius: var(--border-radius-md);
+}
+
+.continueTitle {
+    margin-bottom: var(--gap-xxl);
 }
